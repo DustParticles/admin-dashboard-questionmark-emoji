@@ -1,3 +1,35 @@
-p {
-  color: brown;
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  /* use minmax */
+  grid-template-columns: minmax(300px, 2fr) 8fr;
+  grid-template-rows: minmax(170px, 0.3fr) 2fr;
+}
+
+div {
+  outline: 1px solid lightseagreen;
+}
+
+.sidebar {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.top-content {
+}
+
+.content {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  grid-column-start: 2;
 }
