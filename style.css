@@ -266,13 +266,17 @@ body {
 .announcement-one,
 .announcement-two {
   display: inline;
-  border-bottom: 3px solid #cbd5e1;
 }
 
 .announcement-one,
 .announcement-two,
 .announcement-three {
   color: #737373;
+}
+
+.line-separator {
+  border-top: 1px solid #d4d4d4;
+  position: relative;
 }
 
 .trending {
