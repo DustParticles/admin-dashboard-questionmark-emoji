@@ -143,6 +143,7 @@
           <img
             src="https://c.tenor.com/apns_8-5xl8AAAAd/huh-verne.gif"
             alt="user profile picture"
+            class="main-profile"
           />
           <div class="greeting">
             <p class="hi">Hi there,</p>
@@ -403,7 +404,7 @@
             />
             <div class="trending-person">
               <b>@WOT</b>
-              <p></p>
+              <p>what didJA you say?</p>
             </div>
           </div>
           <div class="trending-cards">
@@ -414,8 +415,8 @@
               width="20px"
             />
             <div class="trending-person">
-              <b>@HUH</b>
-              <p>@AAAUUUUGGHHHH</p>
+              <b>@AAAUUUUGGHHHH</b>
+              <p>HUH</p>
             </div>
           </div>
           <div class="trending-cards">
@@ -446,4 +447,82 @@
       </div>
     </div>
   </body>
+  <script>
+    let trendingImages = document.querySelectorAll(".trending-image");
+
+    /* let navigationLink = document.querySelectorAll(".navigation-link>a");
+
+    let moreInfo = document.querySelectorAll(".more-info>a"); */
+
+    let videos = {
+      0: "https://youtu.be/QHL4mFcOir4",
+      1: "https://youtu.be/_u5Ii-noGvU?t=14",
+      2: "https://youtu.be/4KcwFI231Lc?t=2",
+      3: "https://youtu.be/nrjNcWCtfDY",
+    };
+
+    let counter = 0;
+    trendingImages[0].addEventListener("click", function () {
+      // Simulate a mouse click:
+      window.location.href = videos[0];
+
+      // Simulate an HTTP redirect:
+      window.location.replace(videos[0]);
+    });
+    trendingImages[1].addEventListener("click", function () {
+      // Simulate a mouse click:
+      window.location.href = videos[1];
+
+      // Simulate an HTTP redirect:
+      window.location.replace(videos[1]);
+    });
+    trendingImages[2].addEventListener("click", function () {
+      // Simulate a mouse click:
+      window.location.href = videos[2];
+
+      // Simulate an HTTP redirect:
+      window.location.replace(videos[2]);
+    });
+    trendingImages[3].addEventListener("click", function () {
+      // Simulate a mouse click:
+      window.location.href = videos[3];
+
+      // Simulate an HTTP redirect:
+      window.location.replace(videos[3]);
+    });
+
+    document.querySelector(".profile-picture").addEventListener("click", () => {
+      window.location.href = "https://youtu.be/UpMpZqfA9EU";
+
+      window.location.replace("https://youtu.be/UpMpZqfA9EU");
+    });
+
+    document.querySelector(".main-profile").addEventListener("click", () => {
+      window.location.href = "https://youtu.be/HI3kEZUY-E4";
+
+      window.location.replace("https://youtu.be/HI3kEZUY-E4");
+    });
+
+    /*  moreInfo.forEach((element) => {
+      element.addEventListener("click", () => {
+        // Simulate a mouse click:
+        window.location.href = "https://youtu.be/T14DQkV0fEQ";
+
+        // Simulate an HTTP redirect:
+        window.location.replace("https://youtu.be/T14DQkV0fEQ");
+      });
+    });
+    navigationLink.forEach((element) => {
+      element.addEventListener("click", () => {
+        // Simulate a mouse click:
+        window.location.href =
+          "https://www.tiktok.com/@martgc19/video/7101832803402124590?is_from_webapp=1&sender_device=pc&web_id=7126495215641364011";
+
+        // Simulate an HTTP redirect:
+        window.location.replace(
+          "https://www.tiktok.com/@martgc19/video/7101832803402124590?is_from_webapp=1&sender_device=pc&web_id=7126495215641364011"
+        );
+      });
+    }); */
+  </script>
 </html>
